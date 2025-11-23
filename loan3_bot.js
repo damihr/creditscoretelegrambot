@@ -4,12 +4,12 @@ const schedule = require('node-schedule');
 const xlsx = require('xlsx');
 
 // Replace with your bot token
-const token = '7697426305:AAHDtX2gAAzPpFjZVuUEWe9Csg7kWRFp2VY';
+
 const bot = new TelegramBot(token, {polling: true});
 
 
 // Define the bot owner's Telegram user ID
-const ownerId = 1101168984;  // Replace with your actual Telegram user ID
+
 
 // SQLite Database Setup
 let db = new sqlite3.Database('./loans.db');
@@ -871,7 +871,7 @@ bot.onText(/\/usercheckbalance (\d+)/, (msg, match) => {
 const Groq = require('groq-sdk');
 
 // Initialize Groq and Telegram Bot
-const groq = new Groq({ apiKey: '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' }); // Replace with your actual Groq API key
+const groq = new Groq({ apiKey:  }); // Replace with your actual Groq API key
 
 
 // Track active conversations
